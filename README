@@ -1,0 +1,10 @@
+Code to implement wireless n64 controllers using a MSP430 and ATmega microcontroller. The project uses two nrf24l01 transcievers for 2.4GHz wireless communication.
+The code implements a mostly portable library for working with the nrf24l01 modules. Implementations of the module can be found in both the MSP430 and ATmega codebases.
+
+The code has been verified to work with an ATmega328P connected to the console and an MSP430g2553 connected to the controller. The specific ATmega or MSP430 chip should not matter, but this has not been tested.
+
+Currently, the project only supports one wireless controller per console as the transmission freqency is hardcoded. This can be modified for each wireless controller so that more than one can be used. You may also need to change the sending and recieveing addresses to support more than one controller. This has not been tested.
+
+The n64Console is able to source enough current to power both the ATmega uC and the nrf24l01 module. The MSP430 and controller end must be powered with a seperate power supply. I have been successful in powering it with 2 1.5V AAA batteries, but the code is currently not optimized for power consumption, and battery life may be only a few hours or less.
+
+See the README in each directory for pinouts.

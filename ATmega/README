@@ -1,0 +1,13 @@
+An ATmega processor is used to connect to the n64 console. The ATmega and nRF module can both be powered by the n64's 3.3V controller power line.
+
+Pinout:
+
+ATmega  |  nRF
+PB5   ->   SCK
+PB4   ->   MISO
+PB3   ->   MOSI
+PB2   ->   CSN
+PB0   ->   CE
+
+ATmega  |  n64
+PB1   ->   DATA (middle input)

@@ -1,0 +1,13 @@
+A MSP430 processor in used to connect to a n64 controller. The controller and nRF module must be powered by an external ~3V supply.
+
+Pinout:
+
+MSP430 | nRF
+P1.1  -> MISO  
+P1.2  -> MOSI
+P1.3  -> CE
+P1.4  -> SCK
+P1.5  -> CSN
+
+MSP430 | Controller
+P1.0  -> DATA
